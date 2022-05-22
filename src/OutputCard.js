@@ -1,14 +1,59 @@
-import * as React from 'react';
-import Typography from '@mui/material/Typography';
+import * as React from "react";
+import Typography from "@mui/material/Typography";
 
 function OutputCard(props) {
   return (
-    <div>
-      <Typography variant="h4" gutterBottom component="div">
-        Prompt: {props.input}
+    <div
+      style={{
+        backgroundColor: "#FAF9F8",
+        padding: 10,
+      }}
+    >
+      <Typography
+        variant="h4"
+        display="inline"
+        gutterBottom
+        component="div"
+        style={{
+          fontSize: 16,
+          fontWeight: "bold",
+        }}
+      >
+        Prompt:&nbsp;
       </Typography>
-      <Typography variant="h4" gutterBottom component="div">
-        Response: {props.output}
+      <Typography
+        variant="h4"
+        display="inline"
+        gutterBottom
+        component="div"
+        sx={{ whiteSpace: "pre-line" }}
+        style={{
+          fontSize: 16,
+        }}
+      >
+        {props.input}
+        {"\n"}
+      </Typography>
+      <Typography
+        variant="h4"
+        display="inline"
+        gutterBottom
+        component="div"
+        style={{
+          fontSize: 16,
+          fontWeight: "bold",
+        }}
+      >
+        Response:&nbsp;
+      </Typography>
+      <Typography
+        variant="h4"
+        display="inline"
+        style={{
+          fontSize: 16,
+        }}
+      >
+        {props.output}
       </Typography>
     </div>
   );
