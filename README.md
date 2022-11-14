@@ -10,7 +10,7 @@ To run the web app:
 2. Run `npm start`
 3. Open your browser and go to [http://localhost:3000/](http://localhost:3000/)
 
-Additionally, the web app is also hosted [here](https://shopify-frontend-challenge-fall-2022-five.vercel.app/).
+Additionally, the web app is also hosted [here](https://shopify-frontend-challenge-fall-2022.vercel.app/).
 
 ## Technologies
 
